@@ -1,0 +1,390 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*background-color: black;*/
+  color: white;
+  text-decoration: none;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.section {
+  background-color: black;
+}
+
+header,
+main,
+footer {
+  background-color: black;
+}
+
+.header-area {
+  display: flex;
+  position: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 22px;
+  margin-left: 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 25px;
+}
+
+.call {
+  border: 1px solid orange;
+  color: orange;
+  font-size: 18px;
+  padding: 15px 19px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 25px;
+}
+
+#navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 1px solid transparent;
+  padding: 39px 7px;
+  list-style: none;
+  gap: 35px;
+}
+
+#navigation a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#navigation :hover {
+  cursor: pointer;
+  color: orange;
+  position: relative;
+  text-decoration: none;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  /* Adjust the thickness of the line */
+  background-color: transparent;
+  /* Initially transparent */
+  transition: background-color 0.5s ease;
+  /* Add transition effect */
+}
+
+a:hover::after {
+  background-color: orange;
+  /* Change to desired color on hover */
+}
+
+.dropbtn {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
+.blog content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover blog content {
+  display: block;
+}
+
+.blog content {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.blog content a:hover {
+  background-color: #ddd;
+}
+
+.img1 {
+  display: flex;
+  background-image: url("cake.webp");
+  align-items: center;
+  position: relative;
+  margin: 0;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  opacity: 1;
+  min-width: 1045px;
+  height: 580px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-area {
+  margin: 0px 12px;
+  border: 1px solid transparent;
+  padding: 35px;
+}
+
+.heading {
+  color: #fff;
+  font-family: "Poiret One", cursive;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 35px;
+  line-height: 1.2;
+  margin-bottom: 41px;
+}
+
+.order {
+  color: rgb(231, 213, 21);
+  background-color: #e5bf4a;
+  font-size: 15px;
+  font-weight: 400;
+  display: inline-block;
+  text-transform: uppercase;
+  line-height: 15px;
+  padding: 22px 41px;
+}
+
+.row {
+  padding-top: 100px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .section-title {
+  color: #fff;
+  font-family: "Poiret One", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.section-content {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: 35px;
+}
+
+.section-content .details {
+  display: flex;
+  box-sizing: border-box;
+  margin: 35px;
+}
+
+.section-content .details p {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  line-height: 1.5em;
+}
+
+.section-content .topic {
+  margin-bottom: 15px;
+}
+
+.container .section-content h2 {
+  color: #e5bf4a;
+}
+
+.container .section-content p {
+  color: #ddd;
+}
+
+.section-title h2 {
+  display: block;
+  color: #dfdfdf;
+  border: 1px solid black;
+  line-height: 1.3;
+  margin-bottom: 12px;
+  position: relative;
+  padding: 0px 12px;
+  font-family: "Poiret One", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  gap: 5px;
+}
+
+.column {
+  padding-top: 95px;
+  padding-bottom: 100px;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.column .slider {
+  color: #e5bf4a;
+  font-size: 30px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.latest-items {
+  max-width: 960px;
+  padding-right: 95px;
+  padding-left: 95px;
+  width: 100%;
+}
+
+.latest-items button {
+  color: #e5bf4a;
+  font-size: 25px;
+  line-height: 1;
+}
+
+.slider-images {
+  box-sizing: border-box;
+  display: flex;
+  color: rgb(180, 172, 163);
+}
+
+.slider-images .properties-caption {
+  color: yellow;
+  font-size: 25px;
+}
+
+.slider-images .properties-card {
+  margin-right: 15px;
+}
+
+.slider-images .img-caption {
+  color: rgb(245, 242, 242);
+  background: #161616;
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 14px 0px;
+}
+
+.footer-wrapper {
+  padding-top: 49px;
+  padding-bottom: 0px;
+}
+
+.footer-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  padding: 25px;
+}
+
+.navigation {
+  font-size: 20px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 70px;
+  position: absolute;
+  right: 35px;
+}
+.hrline{
+  margin: 30px;
+  width: 90%;
+  color: gray;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 25px 80px;
+}
+
+.footer-para p{
+  font-size: 16px;
+  padding-left: 15px;
+  line-height: 1.8;
+  margin-bottom: 21px;
+  font-family: "Jost", sans-serif;
+}
+.footer-title {
+ font-size: 25px;
+ padding: 45px;
+ justify-content: space-between;
+ line-height: 1.5;
+}
+.footer-title h4{
+  color: #e5bf4a;
+}
+.footer-title ul{
+  list-style: none;
+}
+.contact-details{
+  font-size: 25px;
+ padding: 45px;
+ justify-content: space-between;
+ line-height: 1.5;
+}
+.contact-details h4{
+  color: #e5bf4a;
+}
+.contact-details ul{
+  list-style: none;
+}
+.social-media .btn_02{
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  display: inline-block;
+  padding: 14px 36px 13px 39px;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 400;
+    background: none;
+    border-radius: 0px;
+    margin-right: 4px;
+    margin-bottom: 10px;
+}
+.footer-bottom{
+  width: 100%;
+   margin-top: 15px;
+   margin-bottom: 25px;
+   text-align: center;
+   
+}
+
+.footer-paraa{
+  background: black;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2;
+}
